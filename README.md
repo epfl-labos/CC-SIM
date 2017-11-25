@@ -60,3 +60,10 @@ Run the last simulation again inside GDB using the same RNG seed as the last run
 To generate the documentation, run `make doc` you'll need `python3` and
 `python-virtualenv` installed on your system. Once the documentation is
 successfully generated the URL of the index is printed on the terminal.
+
+#Contributors
+Florian Vessaz (florian@florv.ch)
+
+# Contacts
+Florian Vessaz (florian@florv.ch)
+Diego Didona (diego.didona@epfl.ch)
