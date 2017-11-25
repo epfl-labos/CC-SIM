@@ -61,7 +61,7 @@ To generate the documentation, run `make doc` you'll need `python3` and
 `python-virtualenv` installed on your system. Once the documentation is
 successfully generated the URL of the index is printed on the terminal.
 
-#Contributors
+# Contributors
 Florian Vessaz (florian@florv.ch)
 
 # Contacts
