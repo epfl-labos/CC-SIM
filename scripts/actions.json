@@ -1,0 +1,13 @@
+{
+   "application" : {
+      "protocol" : ["gr", "grv"]
+   },
+   "cluster" : {
+      "clients_per_partition" : [2, 4, 6, 8, 10]
+   },
+   "workload" : {
+      "rotx_put_rr" : {
+         "values per rotx" : [32, 24, 16, 8, 4, 2, 1]
+      }
+   }
+}

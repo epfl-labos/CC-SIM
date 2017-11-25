@@ -1,0 +1,51 @@
+{
+  "application": {
+    "protocol": ["grv"]
+  },
+  "cluster": {
+    "clients_per_partition": [2, 4, 6, 8, 10],
+    "partitions_per_replica": [32]
+  },
+  "workload": {
+    "rotx_put_rr": {
+      "values per rotx": [1, 2, 4, 8, 16, 24, 32]
+    }
+  },
+  "client": {
+    "workload": ["rotx_put_rr"]
+  },
+  "timing": {
+    "gr": {
+      "check_gst_time": {"min": 1e-9, "max": 1e-4},
+      "get_value_time": {"min": 1e-9, "max": 1e-4},
+      "is_value_visible_time": {"min": 1e-9, "max": 1e-4},
+      "min_replica_version_per_replica_time": {"min": 1e-9, "max": 1e-4},
+      "process_clock_tick_time": {"min": 1e-9, "max": 1e-4},
+      "process_get_request_pre_time": {"min": 1e-9, "max": 1e-4},
+      "process_heartbeat_time": {"min": 1e-9, "max": 1e-4},
+      "process_lst_from_leaf_end_per_replica_time": {"min": 1e-9, "max": 1e-4},
+      "process_lst_from_leaf_per_replica_time": {"min": 1e-9, "max": 1e-4},
+      "process_put_request_pre_time": {"min": 1e-9, "max": 1e-4},
+      "process_replica_update_time": {"min": 1e-9, "max": 1e-4},
+      "process_slice_response_per_value_time": {"min": 1e-9, "max": 1e-4},
+      "put_value_time": {"min": 1e-9, "max": 1e-4},
+      "update_gst_per_rotx_time": {"min": 1e-9, "max": 1e-4},
+      "update_gst_time": {"min": 1e-9, "max": 1e-4}
+    },
+    "grv": {
+      "check_gst_vector_per_replica_time": {"min": 1e-9, "max": 1e-4},
+      "process_rotx_request_per_partition_time": {"min": 1e-9, "max": 1e-4},
+      "update_gst_vector_per_replica_time": {"min": 1e-9, "max": 1e-4},
+      "update_gst_vector_per_update_time": {"min": 1e-9, "max": 1e-4}
+    },
+    "build_struct_per_byte_time": {"min": 1e-9, "max": 1e-4},
+    "client_thinking_time": {"min": 1e-6, "max": 1e-3},
+    "server_send_per_byte_time": {"min": 1e-9, "max": 1e-4},
+    "server_send_time": {"min": 1e-9, "max": 1e-4},
+    "timing_distribution": null,
+    "lock_time": {"min": 1e-9, "max": 1e-4}
+  },
+  "network": {
+    "intra_datacenter_delay": {"min": 0.001e-3, "max": 1e-3}
+  }
+}

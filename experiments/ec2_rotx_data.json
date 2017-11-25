@@ -1,0 +1,677 @@
+[
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.22185447916667e-3,
+      "rotx_latency" : 3.10716229166667e-3,
+      "throughput" : 83.97496e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 2.29887854166667e-3,
+      "rotx_latency" : 6.31251385416667e-3,
+      "throughput" : 86.53474e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 3.41126427083333e-3,
+      "rotx_latency" : 9.60713958333333e-3,
+      "throughput" : 86.7534e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 4.24945052083333e-3,
+      "rotx_latency" : 13.1190710416667e-3,
+      "throughput" : 87.14932e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 5.35457677083333e-3,
+      "rotx_latency" : 16.1220194791667e-3,
+      "throughput" : 88.35922e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.21943541666667e-3,
+      "rotx_latency" : 3.10445510416667e-3,
+      "throughput" : 84.04247e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 2.30828072916667e-3,
+      "rotx_latency" : 6.30459927083333e-3,
+      "throughput" : 86.52167e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 3.41898729166667e-3,
+      "rotx_latency" : 9.61002229166667e-3,
+      "throughput" : 86.68288e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 4.24791604166667e-3,
+      "rotx_latency" : 13.2090222916667e-3,
+      "throughput" : 86.76731e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 5.494333125e-3,
+      "rotx_latency" : 16.0709353125e-3,
+      "throughput" : 88.10104e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.11485489583333e-3,
+      "rotx_latency" : 2.430216875e-3,
+      "throughput" : 102.14143e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.90706541666667e-3,
+      "rotx_latency" : 4.69302614583333e-3,
+      "throughput" : 112.08417e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 2.72004729166667e-3,
+      "rotx_latency" : 7.25679000000001e-3,
+      "throughput" : 112.63663e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 3.68064697916666e-3,
+      "rotx_latency" : 9.67182416666667e-3,
+      "throughput" : 112.9246e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 4.66779197916667e-3,
+      "rotx_latency" : 11.9153370833333e-3,
+      "throughput" : 114.07362e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.9877890625e-3,
+      "rotx_latency" : 1.64126479166667e-3,
+      "throughput" : 134.9669e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.56168333333333e-3,
+      "rotx_latency" : 3.09953302083333e-3,
+      "throughput" : 156.75599e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 2.09705020833333e-3,
+      "rotx_latency" : 4.85809208333333e-3,
+      "throughput" : 160.13496e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 2.69466770833333e-3,
+      "rotx_latency" : 6.6191078125e-3,
+      "throughput" : 160.79756e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 3.58208083333333e-3,
+      "rotx_latency" : 7.9061915625e-3,
+      "throughput" : 163.68425e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.8113075e-3,
+      "rotx_latency" : 1.04240770833333e-3,
+      "throughput" : 187.2851e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.21324739583333e-3,
+      "rotx_latency" : 1.72023520833333e-3,
+      "throughput" : 243.52406e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.57134729166667e-3,
+      "rotx_latency" : 2.5888665625e-3,
+      "throughput" : 262.77762e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.87806427083333e-3,
+      "rotx_latency" : 3.42706052083333e-3,
+      "throughput" : 277.75956e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 2.25679947916667e-3,
+      "rotx_latency" : 4.13823125e-3,
+      "throughput" : 289.94743e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.722608333333333e-3,
+      "rotx_latency" : 0.815030208333333e-3,
+      "throughput" : 223.45611e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.975813020833334e-3,
+      "rotx_latency" : 1.14344729166667e-3,
+      "throughput" : 330.92526e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.24596958333333e-3,
+      "rotx_latency" : 1.57828291666667e-3,
+      "throughput" : 380.03596e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.48804510416667e-3,
+      "rotx_latency" : 2.03289760416667e-3,
+      "throughput" : 411.59706e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.77380677083333e-3,
+      "rotx_latency" : 2.48182458333333e-3,
+      "throughput" : 429.51879e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.683456875e-3,
+      "rotx_latency" : 0.713067291666667e-3,
+      "throughput" : 244.85879e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.8367371875e-3,
+      "rotx_latency" : 0.8862696875e-3,
+      "throughput" : 402.09328e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.03476177083333e-3,
+      "rotx_latency" : 1.1114675e-3,
+      "throughput" : 492.33858e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.25119916666667e-3,
+      "rotx_latency" : 1.37213197916667e-3,
+      "throughput" : 544.6457e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.8195371875e-3,
+      "rotx_latency" : 1.43714104166667e-3,
+      "throughput" : 556.23661e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.66451875e-3,
+      "rotx_latency" : 0.648158541666667e-3,
+      "throughput" : 258.94521e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.776839270833333e-3,
+      "rotx_latency" : 0.756685729166667e-3,
+      "throughput" : 448.3031e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 0.9155375e-3,
+      "rotx_latency" : 0.882741666666667e-3,
+      "throughput" : 580.82682e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.2010353125e-3,
+      "rotx_latency" : 0.999761770833334e-3,
+      "throughput" : 643.61116e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "grv",
+      "put_latency" : 1.63734614583333e-3,
+      "rotx_latency" : 1.039406875e-3,
+      "throughput" : 670.58296e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.644988958333334e-3,
+      "rotx_latency" : 77.1902545833333e-3,
+      "throughput" : 4.9756e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.703142708333333e-3,
+      "rotx_latency" : 77.1190153125e-3,
+      "throughput" : 10.00842e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.782662395833334e-3,
+      "rotx_latency" : 77.5110696875e-3,
+      "throughput" : 14.80005e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.790093854166667e-3,
+      "rotx_latency" : 76.4657773958333e-3,
+      "throughput" : 20.02472e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 32,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.836243854166667e-3,
+      "rotx_latency" : 77.9462726041667e-3,
+      "throughput" : 24.48085e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.636568854166666e-3,
+      "rotx_latency" : 75.392943125e-3,
+      "throughput" : 5.12675e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.662513854166667e-3,
+      "rotx_latency" : 80.6018784375e-3,
+      "throughput" : 9.51491e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.7276878125e-3,
+      "rotx_latency" : 77.7967717708333e-3,
+      "throughput" : 14.70796e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.743931458333333e-3,
+      "rotx_latency" : 82.2443451041667e-3,
+      "throughput" : 18.51096e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 24,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.752400937500001e-3,
+      "rotx_latency" : 76.684971875e-3,
+      "throughput" : 24.97203e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.630080208333333e-3,
+      "rotx_latency" : 73.9135536458334e-3,
+      "throughput" : 5.20615e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.6740875e-3,
+      "rotx_latency" : 77.6481014583333e-3,
+      "throughput" : 9.86239e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.708638958333333e-3,
+      "rotx_latency" : 74.1536940625e-3,
+      "throughput" : 15.49813e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.7349909375e-3,
+      "rotx_latency" : 76.3019429166667e-3,
+      "throughput" : 20.04536e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 16,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.73868875e-3,
+      "rotx_latency" : 74.3476101041667e-3,
+      "throughput" : 25.76287e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.631138333333333e-3,
+      "rotx_latency" : 79.1496358333333e-3,
+      "throughput" : 4.82092e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.644458229166667e-3,
+      "rotx_latency" : 78.5381719791667e-3,
+      "throughput" : 9.72812e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.667957291666667e-3,
+      "rotx_latency" : 76.3533227083333e-3,
+      "throughput" : 15.00081e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.6780853125e-3,
+      "rotx_latency" : 78.3587234375e-3,
+      "throughput" : 19.54344e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 8,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.731968541666667e-3,
+      "rotx_latency" : 79.3900815625e-3,
+      "throughput" : 23.95816e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.621513020833334e-3,
+      "rotx_latency" : 77.4986561458333e-3,
+      "throughput" : 4.92963e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.641148125e-3,
+      "rotx_latency" : 77.6099101041667e-3,
+      "throughput" : 9.85282e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.639673541666667e-3,
+      "rotx_latency" : 75.7010708333333e-3,
+      "throughput" : 15.16113e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.6599240625e-3,
+      "rotx_latency" : 77.6971678125e-3,
+      "throughput" : 19.64535e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 4,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.6984421875e-3,
+      "rotx_latency" : 74.232798125e-3,
+      "throughput" : 25.73803e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.617013541666667e-3,
+      "rotx_latency" : 76.3211714583334e-3,
+      "throughput" : 5.05814e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.638333125e-3,
+      "rotx_latency" : 76.8118770833333e-3,
+      "throughput" : 10.03585e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.6579590625e-3,
+      "rotx_latency" : 81.33821125e-3,
+      "throughput" : 14.15459e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.670588541666667e-3,
+      "rotx_latency" : 77.4321073958333e-3,
+      "throughput" : 19.87686e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 2,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.683412395833333e-3,
+      "rotx_latency" : 79.0346564583333e-3,
+      "throughput" : 24.22567e3
+   },
+   {
+      "clients_per_partition" : 2,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.633030520833333e-3,
+      "rotx_latency" : 79.7782941666667e-3,
+      "throughput" : 4.79446e3
+   },
+   {
+      "clients_per_partition" : 4,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.633837604166667e-3,
+      "rotx_latency" : 79.2238840625e-3,
+      "throughput" : 9.66317e3
+   },
+   {
+      "clients_per_partition" : 6,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.638753333333333e-3,
+      "rotx_latency" : 80.0435152083333e-3,
+      "throughput" : 14.33262e3
+   },
+   {
+      "clients_per_partition" : 8,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.662692708333334e-3,
+      "rotx_latency" : 81.9542316666667e-3,
+      "throughput" : 18.66726e3
+   },
+   {
+      "clients_per_partition" : 10,
+      "keys_per_rotx" : 1,
+      "partitions" : 32,
+      "protocol" : "gr",
+      "put_latency" : 0.702501145833333e-3,
+      "rotx_latency" : 77.069190625e-3,
+      "throughput" : 24.97638e3
+   }
+]

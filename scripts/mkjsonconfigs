@@ -1,0 +1,149 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use v5.20;
+
+use JSON;
+my $json = JSON->new->pretty;
+
+if (scalar(@ARGV) != 3) {
+	print "Usage: $0 prefix template.json actions.json\n";
+	exit 0;
+}
+
+my ($output_prefix, $template_file, $actions_file) = @ARGV;
+my $template_params = decode_json_file($template_file);
+my $actions_params = decode_json_file($actions_file);
+check_parameters($template_params, $actions_params);
+my $generator = make_hash_counter($template_params, $actions_params);
+my @docs = generate_documents($generator);
+
+my $i = 0;
+for my $doc (@docs) {
+	my $file = $output_prefix . "_" . $i . ".json";
+	open(my $fh, ">", $file) or die "Couldn't write to $file: $!";
+	print $fh $json->encode($doc);
+	close($fh);
+	++$i;
+}
+
+
+sub decode_json_file {
+	my ($file) = @_;
+	local $/;
+	$/ = undef;
+	open(my $fh, "<", $file) or die "Cannot open $file: $!";
+	return $json->decode(<$fh>);
+}
+
+sub check_parameters {
+	my ($template_params, $actions_params) = @_;
+	my %keys;
+	$keys{$_} = 1 foreach (keys %$template_params, keys %$actions_params);
+	foreach my $k (keys %keys) {
+		die "$k missing in $template_file" unless exists $template_params->{$k};
+		if (ref $template_params->{$k} eq "HASH") {
+			check_parameters($template_params->{$k}, $actions_params->{$k});
+		}
+	}
+}
+
+sub make_value_list_counter {
+	my ($values) = @_;
+	my $next_index = 0;
+	my $next_overflow = 0;
+	return sub {
+		my @current = ($values->[$next_index], $next_overflow);
+		$next_index++;
+		if ($next_index > $#{$values}) {
+			$next_index = 0;
+			$next_overflow = 1;
+		} else {
+			$next_overflow = 0;
+		}
+		return @current;
+	}
+}
+
+sub make_numeric_counter {
+	my ($min, $max, $step) = @_;
+	my $next = $min;
+	my $next_overflow = 0;
+	return sub {
+		my @current = ($next, $next_overflow);
+		$next += $step;
+		if ($next > $max or $step == 0) {
+			$next_overflow = 1;
+			$next = $min;
+		} else {
+			$next_overflow = 0;
+		}
+		return @current;
+	};
+}
+
+sub make_constant {
+	my ($value) = @_;
+	my $next_overflow = 0;
+	return sub {
+		my @current = ($value, $next_overflow);
+		$next_overflow = 1;
+		return @current;
+	};
+}
+
+sub make_hash_counter {
+	my ($template_params, $actions_params) = @_;
+	my %counters;
+	foreach my $k (keys %$template_params) {
+		my $v;
+		if (not defined $actions_params->{$k}) {
+			$v = make_constant($template_params->{$k});
+		} elsif (ref $template_params->{$k} eq "HASH") {
+			$v = make_hash_counter($template_params->{$k}, $actions_params->{$k});
+		} elsif (ref $actions_params->{$k} eq "ARRAY") {
+			$v = make_value_list_counter($actions_params->{$k});
+		} elsif (ref $actions_params->{$k} eq "HASH") {
+			my $step = $actions_params->{$k}{step} // die("Missing step in object for $k");
+			my $min = $actions_params->{$k}{min} // $template_params->{$k};
+			my $max = $actions_params->{$k}{max} // die("Missing max in object for $k");
+			$v = make_numeric_counter($min, $max, $step);
+		} else {
+			$v = make_constant($template_params->{$k});
+		}
+		$counters{$k} = $v;
+	}
+	my %doc;
+	return sub {
+		my $overflow;
+		unless (keys %doc) {
+			# First call
+			foreach my $k (sort keys %counters) {
+				(my $value, $overflow) = $counters{$k}->();
+				die "Unexpected overflow" if $overflow;
+				die "Counter for $k returned an undefined value" unless defined $value;
+				$doc{$k} = $value;
+			}
+		} else {
+			# Subsequent calls
+			foreach my $k (sort keys %counters) {
+				(my $value, $overflow) = $counters{$k}->();
+				die "Counter for $k returned an undefined value" unless defined $value;
+				$doc{$k} = $value;
+				last unless $overflow;
+			}
+		}
+		my %new_doc = %doc;
+		return (\%new_doc, $overflow);
+	};
+}
+
+sub generate_documents {
+	my ($generator) = @_;
+	my @documents;
+	while (1) {
+		my ($doc, $overflow) = $generator->();
+		return @documents if $overflow;
+		push @documents, $doc;
+	}
+}

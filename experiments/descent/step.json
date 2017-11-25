@@ -1,0 +1,32 @@
+{
+	"cluster": {
+		"replicas": null,
+		"partitions_per_replica": null,
+		"clients_per_partition": null
+	},
+	"timing": {
+		"gst_interval": null,
+		"clock_interval": null,
+		"intra_datacenter_network_delay": {"min": 0.00002, "max": 0.0002, "step": 0.50},
+		"build_struct_per_byte_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_clock_tick_time": {"min": 0, "max": 1, "step": 0.50},
+		"server_send_time": {"min": 0, "max": 1, "step": 0.50},
+		"server_send_per_byte_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_get_request_pre_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_put_request_pre_time": {"min": 0, "max": 1, "step": 0.50},
+		"min_replica_version_per_replica_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_lst_from_leaf_per_replica_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_lst_from_leaf_end_per_replica_time": {"min": 0, "max": 1, "step": 0.50},
+		"update_gst_vector_per_update_time": {"min": 0, "max": 1, "step": 0.50},
+		"update_gst_vector_per_replica_time": {"min": 0, "max": 1, "step": 0.50},
+		"update_gst_time": {"min": 0, "max": 1, "step": 0.50},
+		"update_gst_per_rotx_time": null,
+		"process_heartbeat_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_replica_update_time": {"min": 0, "max": 1, "step": 0.50},
+		"process_rotx_request_per_partition_time": null,
+		"process_slice_response_per_value_time": null,
+		"get_value_time": {"min": 0, "max": 1, "step": 0.50},
+		"put_value_time": {"min": 0, "max": 1, "step": 0.50},
+		"is_value_visible_time": {"min": 0, "max": 1, "step": 0.50}
+	}
+}

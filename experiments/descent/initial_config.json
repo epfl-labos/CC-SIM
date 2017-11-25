@@ -1,0 +1,33 @@
+{
+   "cluster" : {
+      "partitions_per_replica" : 8,
+      "clients_per_partition" : 8,
+      "replicas" : 3
+   },
+   "timing" : {
+      "build_struct_per_byte_time" : 2.1e-07,
+      "client_thinking_time": 0.0006,
+      "clock_interval" : 0.01,
+      "get_value_time" : 1.05e-05,
+      "gst_interval" : 0.005,
+      "intra_datacenter_network_delay" : 0.00015,
+      "is_value_visible_time" : 1.05e-05,
+      "min_replica_version_per_replica_time" : 1.05e-05,
+      "process_clock_tick_time" : 1.05e-05,
+      "process_get_request_pre_time" : 1.05e-05,
+      "process_heartbeat_time" : 1.05e-05,
+      "process_lst_from_leaf_end_per_replica_time" : 1.05e-05,
+      "process_lst_from_leaf_per_replica_time" : 1.05e-05,
+      "process_put_request_pre_time" : 1.05e-05,
+      "process_replica_update_time" : 1.05e-05,
+      "process_rotx_request_per_partition_time" : 1.05e-05,
+      "process_slice_response_per_value_time" : 1.05e-05,
+      "put_value_time" : 6.4e-09,
+      "server_send_per_byte_time" : 6e-08,
+      "server_send_time" : 1e-07,
+      "update_gst_per_rotx_time" : 1.05e-05,
+      "update_gst_time" : 1.05e-05,
+      "update_gst_vector_per_replica_time" : 1.05e-05,
+      "update_gst_vector_per_update_time" : 1.05e-05
+   }
+}

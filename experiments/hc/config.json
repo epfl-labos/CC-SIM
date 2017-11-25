@@ -1,0 +1,83 @@
+{
+  "application": {
+    "protocol": "gr",
+    "stop_after_simulated_seconds": 120,
+    "stop_after_real_time_seconds": 60
+  },
+  "cluster": {
+    "clients_per_partition": 16,
+    "keys": 1000000,
+    "partitions_per_replica": 16,
+    "replicas": 3,
+    "tree_fanout": 2,
+    "clock_skew": 0,
+    "cores_per_server": 4
+  },
+  "timing": {
+    "gr": {
+      "check_gst_time": 2.96775757905682e-08,
+      "get_value_time": 2.98678977287848e-08,
+      "is_value_visible_time": 3.07444234396438e-08,
+      "min_replica_version_per_replica_time": 1.04739074934752e-06,
+      "process_clock_tick_time": 2.03671967249392e-06,
+      "process_get_request_pre_time": 3.00648781834149e-07,
+      "process_heartbeat_time": 2.00183419639046e-06,
+      "process_lst_from_leaf_end_per_replica_time": 2.99076152973045e-08,
+      "process_lst_from_leaf_per_replica_time": 5.07442004719802e-07,
+      "process_put_request_pre_time": 1.1960670762186e-05,
+      "process_replica_update_time": 3.12230931897527e-06,
+      "process_slice_response_per_value_time": 1.05e-05,
+      "put_value_time": 2.92495479759463e-08,
+      "update_gst_per_rotx_time": 1.05e-05,
+      "update_gst_time": 2.96775757905682e-07
+    },
+    "grv": {
+      "check_gst_vector_per_replica_time": 2.96775757905682e-08,
+      "process_rotx_request_per_partition_time": 1.05e-05,
+      "update_gst_vector_per_replica_time": 3.14743553237175e-06,
+      "update_gst_vector_per_update_time": 1.38303681774655e-06
+    },
+    "build_struct_per_byte_time": 2.87993685050387e-08,
+    "client_thinking_time": 0.18e-3,
+    "server_send_per_byte_time": 2.21407165889835e-07,
+    "server_send_time": 3.69549367165541e-08,
+    "timing_distribution": "exponential",
+    "lock_time": 5e-9
+  },
+  "protocol": {
+    "gr": {
+      "clock_interval": 0.01,
+      "gst_interval": 0.005
+    }
+  },
+  "network": {
+    "intra_datacenter_delay": 0.00035,
+    "inter_datacenter_delay": [
+      [0      , 0.08305, 0.04375],
+      [0.08305, 0      , 0.0406 ],
+      [0.04375, 0.0406 , 0      ]
+    ],
+    "self_delay": 0,
+    "transmission_rate": 500e6
+  },
+  "client": {
+    "workload": "get_put_rr",
+    "key distribution": "uniform",
+    "zipfian skew": 0.99
+  },
+  "workload": {
+    "get_put_rr": {
+    },
+    "probabilistic": {
+        "get probability": 0.8,
+        "put probability": 0.1,
+        "rotx probability": 0.1,
+        "keys per rotx": 10
+    },
+    "rotx_put_rr": {
+        "values per rotx": 8,
+        "number of rotx": 2,
+        "number of put": 1
+    }
+  }
+}

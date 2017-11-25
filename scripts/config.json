@@ -1,0 +1,94 @@
+{
+   "application" : {
+      "protocol" : "grv",
+      "stop_after_real_time_seconds" : 60,
+      "stop_after_simulated_seconds" : 120
+   },
+   "client" : {
+      "key distribution" : "uniform",
+      "workload" : "rotx_put_rr",
+      "zipfian skew" : 0.2
+   },
+   "cluster" : {
+      "clients_per_partition" : 10,
+      "clock_skew" : 0,
+      "cores_per_server" : 4,
+      "keys" : 1000000,
+      "partitions_per_replica" : 32,
+      "replicas" : 3,
+      "tree_fanout" : 2
+   },
+   "network" : {
+      "inter_datacenter_delay" : [
+         [
+            0,
+            0.08305,
+            0.04375
+         ],
+         [
+            0.08305,
+            0,
+            0.0406
+         ],
+         [
+            0.04375,
+            0.0406,
+            0
+         ]
+      ],
+      "intra_datacenter_delay" : 2.21316755592779e-05,
+      "self_delay" : 0,
+      "transmission_rate" : 500000000
+   },
+   "protocol" : {
+      "gr" : {
+         "clock_interval" : 0.01,
+         "gst_interval" : 0.005
+      }
+   },
+   "timing" : {
+      "build_struct_per_byte_time" : 3.8713186757871e-09,
+      "client_thinking_time" : 0.000998707572374105,
+      "gr" : {
+         "check_gst_time" : 9.50993610228344e-05,
+         "get_value_time" : 1.08478728212928e-05,
+         "is_value_visible_time" : 1.18928536874261e-05,
+         "min_replica_version_per_replica_time" : 1.33470343365445e-06,
+         "process_clock_tick_time" : 3.62654231977098e-05,
+         "process_get_request_pre_time" : 1.07311744140173e-07,
+         "process_heartbeat_time" : 6.509155002287e-05,
+         "process_lst_from_leaf_end_per_replica_time" : 1.89144552565083e-05,
+         "process_lst_from_leaf_per_replica_time" : 2.33264470590736e-05,
+         "process_put_request_pre_time" : 1.19143845904138e-06,
+         "process_replica_update_time" : 0.0001,
+         "process_slice_response_per_value_time" : 1.05e-05,
+         "put_value_time" : 4.36908554800056e-05,
+         "update_gst_per_rotx_time" : 1.05e-05,
+         "update_gst_time" : 8.60879096013338e-05
+      },
+      "grv" : {
+         "check_gst_vector_per_replica_time" : 3.86229517522943e-05,
+         "process_rotx_request_per_partition_time" : 1.05e-05,
+         "update_gst_vector_per_replica_time" : 9.4995322327482e-05,
+         "update_gst_vector_per_update_time" : 8.6812485653552e-06
+      },
+      "lock_time" : 7.60051012465775e-05,
+      "server_send_per_byte_time" : 1e-09,
+      "server_send_time" : 3.46621430091048e-05,
+      "timing_distribution" : "exponential"
+   },
+   "workload" : {
+      "get_put_rr" : {},
+      "probabilistic" : {
+         "get probability" : 0.8,
+         "keys per rotx" : 10,
+         "put probability" : 0.1,
+         "rotx probability" : 0.1
+      },
+      "rotx_put_rr" : {
+         "number of put" : 1,
+         "number of rotx" : 2,
+         "values per rotx" : 32
+      }
+   }
+}

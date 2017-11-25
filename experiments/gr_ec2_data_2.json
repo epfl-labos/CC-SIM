@@ -1,0 +1,32 @@
+{
+	"2": {
+		"throughput": 52828.5,
+		"get_latency": 0.001649215,
+		"put_latency": 0.001905191667
+	},
+	"4": {
+		"throughput": 132487.22,
+		"get_latency": 0.001274775,
+		"put_latency": 0.001501745833
+	},
+	"8": {
+		"throughput": 245340.76,
+		"get_latency": 0.00138554625,
+		"put_latency": 0.001584100833
+	},
+	"16": {
+		"throughput": 470908.22,
+		"get_latency": 0.00144966625,
+		"put_latency": 0.001621826458
+	},
+	"24": {
+		"throughput": 703605.62,
+		"get_latency": 0.001455441389,
+		"put_latency": 0.001614306528
+	},
+	"32": {
+		"throughput": 933968.33,
+		"get_latency": 0.001461249375,
+		"put_latency": 0.001609522917
+	}
+}

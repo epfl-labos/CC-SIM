@@ -1,0 +1,8 @@
+/config
+/config.json
+/outputs
+/cpu_usage.dat
+*.aux
+*.log
+*.pdf
+*.dat

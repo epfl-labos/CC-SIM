@@ -1,0 +1,8 @@
+/config
+/config.json
+/outputs
+/plots_fragment.tex
+*.aux
+*.log
+*.pdf
+*.dat

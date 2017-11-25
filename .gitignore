@@ -1,0 +1,9 @@
+*.d
+*.o
+/.python-virtualenv
+/application
+/callgrind.out.*
+/doc/_build
+/gmon.out
+/outputs
+/tags

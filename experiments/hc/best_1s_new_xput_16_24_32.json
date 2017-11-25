@@ -1,0 +1,39 @@
+{
+   "cluster" : {
+      "clients_per_partition" : 16,
+      "partitions_per_replica" : 32,
+      "replicas" : 3
+   },
+   "timing" : {
+      "build_struct_per_byte_time" : 3.25190477410023e-07,
+      "clock_interval" : 0.01,
+      "get_value_time" : 1.74350707683005e-06,
+      "gst_interval" : 0.005,
+      "is_value_visible_time" : 1.98057182105353e-07,
+      "min_replica_version_per_replica_time" : 1.84581721612872e-07,
+      "process_clock_tick_time" : 1.88120989954508e-07,
+      "process_get_request_pre_time" : 7.03489154403936e-07,
+      "process_heartbeat_time" : 2.02268707119967e-07,
+      "process_lst_from_leaf_end_per_replica_time" : 2.97552089377299e-07,
+      "process_lst_from_leaf_per_replica_time" : 1.7978069553312e-06,
+      "process_put_request_pre_time" : 1.34799775488221e-07,
+      "process_replica_update_time" : 2.87781671532237e-06,
+      "process_rotx_request_per_partition_time" : 1.05e-05,
+      "process_slice_response_per_value_time" : 1.05e-05,
+      "put_value_time" : 1.27490387528516e-06,
+      "server_send_per_byte_time" : 1.93759498177924e-07,
+      "server_send_time" : 2.89107546286135e-06,
+      "update_gst_per_rotx_time" : 1.05e-05,
+      "update_gst_time" : 1.46539911161812e-07,
+      "update_gst_vector_per_replica_time" : 2.22473585459125e-07,
+      "update_gst_vector_per_update_time" : 2.6419444607507e-06
+   },
+   "network": {
+      "intra_datacenter_delay" : 0.00015,
+      "inter_datacenter_delay" : [
+         [0      , 0.08305, 0.04375],
+         [0.08305, 0      , 0.0406 ],
+         [0.04375, 0.0406 , 0      ]
+      ]
+   }
+}
